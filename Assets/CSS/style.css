@@ -21,6 +21,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Za pozadinu glavnog dijela */
+
+div.album {
+    background-image: url("../Slike/nba-wallpapers-19.jpg"); 
+}
+
+
+div.container {
+    background: local;
+}
+
+
+/* -------------------------------------------------- */
 
 ul {
     font-family: 'Varela Round', sans-serif;
