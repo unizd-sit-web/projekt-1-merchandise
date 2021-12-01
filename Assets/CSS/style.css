@@ -1,12 +1,20 @@
-body > footer {
-  position: sticky;
-  top: 100vh;
+html, body {
+    height: 100%;
+}
+
+.bg {
+    background-image: url("../Slike/nba-wallpapers-19.jpg");
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 60px;
+    letter-spacing: 10px;
     text-align: left;
+    background-image: linear-gradient(to right, rgba(128, 128, 128,1), rgba(0,0,0, 0));
+    margin-bottom: 0;
+    padding-left: 10px;
+    color: black;
 }
 
 body {
@@ -15,10 +23,11 @@ body {
 
 
 ul {
+    font-family: 'Varela Round', sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background-image: linear-gradient(to right,  black, grey);
 }
 
 li {
@@ -41,6 +50,3 @@ iframe {
     width: 20%;
     height: 400px;
 }
-
-html, body { height: 100%;}
-
