@@ -8,7 +8,7 @@ html, body {
 
 h1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
+    font-size: 90px;
     letter-spacing: 10px;
     text-align: left;
     background-image: linear-gradient(to right, rgba(128, 128, 128,1), rgba(0,0,0, 0));
@@ -21,26 +21,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Za pozadinu glavnog dijela */
-
-div.album {
-    background-image: url("../Slike/nba-wallpapers-19.jpg"); 
-}
-
-
-div.container {
-    background: local;
-}
-
-
-/* -------------------------------------------------- */
-
 ul {
     font-family: 'Varela Round', sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right,  black, grey);
+    background-image: linear-gradient(to right,  grey, black);
 }
 
 li {
@@ -56,8 +42,15 @@ li a {
 }
 
 li a:hover {
-    background-color: red;
+    background-color: white;
+    color: black;
 }
+
+
+#HomeIcon a:hover{
+    background-color: transparent;
+}
+
 
 iframe {
     width: 20%;
