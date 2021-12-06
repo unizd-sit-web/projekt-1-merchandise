@@ -8,7 +8,7 @@ html, body {
 
 h1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 90px;
+    font-size: 8vw;
     letter-spacing: 10px;
     text-align: left;
     background-image: linear-gradient(to right, rgba(128, 128, 128,1), rgba(0,0,0, 0));
