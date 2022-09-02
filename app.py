@@ -5,10 +5,10 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route('/Templates/index')
+@app.route('/')
 def index():
     title = "Merchandise"
-    return render_template("Templates/index.html", title=title)
+    return render_template("index.html", title=title)
 
 @app.route('/Templates/Atlanta Hawks')
 def Atlanta_Hawks():
