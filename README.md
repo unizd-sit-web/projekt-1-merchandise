@@ -10,6 +10,10 @@
 
     `cd projekt-1-merchandise`
 
+- Prvo je potrebno kreirati virtualnu okolinu:
+
+    `py -m venv venv`
+
 - Zatim, pokrenuti virtualnu okolinu:
 
     `source venv/Scripts/activate`
