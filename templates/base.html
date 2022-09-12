@@ -39,7 +39,11 @@
                   <a class="nav-link {{ 'nav__link--active' if request.path == url_for('redir') }}" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link {{ 'nav__link--active' if request.path == url_for('hawks') }}" href="/Atlanta Hawks">Atlanta Hawks</a>
+                  {% if request.path == "/Atlanta Hawks" %}
+                    <a class="nav-link active" aria-current="page" href="/Atlanta Hawks">Atlanta Hawks</a>
+                  {% else %}
+                    <a class="nav-link" href="/Atlanta Hawks">Atlanta Hawks</a>
+                  {% endif %}
                 </li>
                 <li class="nav-item">
                   <a class="nav-link {{ 'nav__link--active' if request.path == url_for('celtics') }}" href="/Boston Celtics">Boston Celtics</a>
