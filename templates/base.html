@@ -43,38 +43,38 @@
                   {% endif %}
                 </li>
                 <li class="nav-item">
-                  {% if request.path == "/Atlanta Hawks" %}
-                    <a class="nav-link active" aria-current="page" href="/Atlanta Hawks">Atlanta Hawks</a>
+                  {% if request.path == "/team/Atlanta Hawks" %}
+                    <a class="nav-link active" aria-current="page" href="/team/Atlanta Hawks">Atlanta Hawks</a>
                   {% else %}
-                    <a class="nav-link" href="/Atlanta Hawks">Atlanta Hawks</a>
+                    <a class="nav-link" href="/team/Atlanta Hawks">Atlanta Hawks</a>
                   {% endif %}
                 </li>
                 <li class="nav-item">
-                  {% if request.path == "/Boston Celtics" %}
-                    <a class="nav-link active" aria-current="page" href="/Boston Celtics">Boston Celtics</a>
+                  {% if request.path == "/team/Boston Celtics" %}
+                    <a class="nav-link active" aria-current="page" href="/team/Boston Celtics">Boston Celtics</a>
                   {% else %}
-                    <a class="nav-link" href="/Boston Celtics">Boston Celtics</a>
+                    <a class="nav-link" href="/team/Boston Celtics">Boston Celtics</a>
                   {% endif %}
                 </li>
                 <li class="nav-item">
-                  {% if request.path == "/Chicago Bulls" %}
-                    <a class="nav-link active" aria-current="page" href="/Chicago Bulls">Chicago Bulls</a>
+                  {% if request.path == "/team/Chicago Bulls" %}
+                    <a class="nav-link active" aria-current="page" href="/team/Chicago Bulls">Chicago Bulls</a>
                   {% else %}
-                    <a class="nav-link" href="/Chicago Bulls">Chicago Bulls</a>
+                    <a class="nav-link" href="/team/Chicago Bulls">Chicago Bulls</a>
                   {% endif %}                
                 </li>
                 <li class="nav-item">
-                  {% if request.path == "/G.S. Warriors" %}
-                    <a class="nav-link active" aria-current="page" href="/G.S. Warriors">Gsw</a>
+                  {% if request.path == "/team/G.S. Warriors" %}
+                    <a class="nav-link active" aria-current="page" href="/team/G.S. Warriors">Gsw</a>
                   {% else %}
-                    <a class="nav-link" href="/G.S. Warriors">Gsw</a>
+                    <a class="nav-link" href="/team/G.S. Warriors">Gsw</a>
                   {% endif %}                
                 </li>
                 <li class="nav-item">
-                  {% if request.path == "/L.A. Lakers" %}
-                    <a class="nav-link active" aria-current="page" href="/L.A. Lakers">L.A. Lakers</a>
+                  {% if request.path == "/team/L.A. Lakers" %}
+                    <a class="nav-link active" aria-current="page" href="/team/L.A. Lakers">L.A. Lakers</a>
                   {% else %}
-                    <a class="nav-link" href="/L.A. Lakers">L.A. Lakers</a>
+                    <a class="nav-link" href="/team/L.A. Lakers">L.A. Lakers</a>
                   {% endif %}                
                 </li>
                 <li class="nav-item">
@@ -105,7 +105,7 @@
               </div>
   
               <div class="col-md-4 d-flex justify-items-center">
-                <form action="/form" method="post">  <!-- skuzit kako da budu jedan kraj drugog -->
+                <form action="/form" method="post">
                   <div class="mb-1">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" name='email_sub' value="{{ email_sub }}">
                   </div>

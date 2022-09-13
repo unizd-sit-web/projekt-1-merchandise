@@ -26,31 +26,23 @@ def index():
 def redir():
     return redirect('/')
 
-
-@app.route('/Chicago Bulls')
-def bulls():
-    title = "Chicago Bulls"
-    return render_template('bulls.html', title=title)
-
-@app.route('/Boston Celtics')
-def celtics():
-    title = "Boston Celtics"
-    return render_template('celtics.html', title=title)
-
-@app.route('/G.S. Warriors')
-def gsw():
-    title = "Golden State Warriors"
-    return render_template('gsw.html', title=title)
-
-@app.route('/Atlanta Hawks')
-def hawks():
-    title = "Atlanta Hawks"
-    return render_template('hawks.html', title=title)
-
-@app.route('/L.A. Lakers')
-def lakers():
-    title = "L.A. Lakers"
-    return render_template('lakers.html', title=title)
+@app.route('/team/<ime>')
+def team(ime):
+    if ime == 'Chicago Bulls':
+        title = "Chicago Bulls"
+        return render_template('bulls.html', title=title)
+    elif ime == 'Boston Celtics':
+        title = "Boston Celtics"
+        return render_template('celtics.html', title=title)
+    elif ime == 'G.S. Warriors':
+        title = "Golden State Warriors"
+        return render_template('gsw.html', title=title)
+    elif ime == 'Atlanta Hawks':
+        title = "Atlanta Hawks"
+        return render_template('hawks.html', title=title)
+    elif ime == 'L.A. Lakers':
+        title = "L.A. Lakers"
+        return render_template('lakers.html', title=title)
 
 @app.route('/Shopping Cart')
 def kosarica():
