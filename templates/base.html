@@ -36,7 +36,11 @@
                 </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link {{ 'nav__link--active' if request.path == url_for('redir') }}" href="/">Home</a>
+                  {% if request.path == "/" %}
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  {% else %}
+                    <a class="nav-link" href="/">Home</a>
+                  {% endif %}
                 </li>
                 <li class="nav-item">
                   {% if request.path == "/Atlanta Hawks" %}
@@ -46,19 +50,39 @@
                   {% endif %}
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link {{ 'nav__link--active' if request.path == url_for('celtics') }}" href="/Boston Celtics">Boston Celtics</a>
+                  {% if request.path == "/Boston Celtics" %}
+                    <a class="nav-link active" aria-current="page" href="/Boston Celtics">Boston Celtics</a>
+                  {% else %}
+                    <a class="nav-link" href="/Boston Celtics">Boston Celtics</a>
+                  {% endif %}
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link {{ 'nav__link--active' if request.path == url_for('bulls') }}" href="/Chicago Bulls">Chicago Bulls</a>
+                  {% if request.path == "/Chicago Bulls" %}
+                    <a class="nav-link active" aria-current="page" href="/Chicago Bulls">Chicago Bulls</a>
+                  {% else %}
+                    <a class="nav-link" href="/Chicago Bulls">Chicago Bulls</a>
+                  {% endif %}                
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link {{ 'nav__link--active' if request.path == url_for('gsw') }}" href="/G.S. Warriors">Gsw</a>
+                  {% if request.path == "/G.S. Warriors" %}
+                    <a class="nav-link active" aria-current="page" href="/G.S. Warriors">Gsw</a>
+                  {% else %}
+                    <a class="nav-link" href="/G.S. Warriors">Gsw</a>
+                  {% endif %}                
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link {{ 'nav__link--active' if request.path == url_for('lakers') }}" href="/L.A. Lakers">LA Lakers</a>
+                  {% if request.path == "/L.A. Lakers" %}
+                    <a class="nav-link active" aria-current="page" href="/L.A. Lakers">L.A. Lakers</a>
+                  {% else %}
+                    <a class="nav-link" href="/L.A. Lakers">L.A. Lakers</a>
+                  {% endif %}                
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link {{ 'nav__link--active' if request.path == url_for('kosarica') }}" href="/Shopping Cart">Cart</a>
+                  {% if request.path == "/Shopping Cart" %}
+                    <a class="nav-link active" aria-current="page" href="/Shopping Cart">Cart</a>
+                  {% else %}
+                    <a class="nav-link" href="/Shopping Cart">Cart</a>
+                  {% endif %}                
                 </li>
               </ul>
             </div>
